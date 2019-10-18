@@ -1,20 +1,18 @@
 import React from "react";
 import Header from "./components/Header.js";
-import {Route} from 'react-router-dom';
-import WelcomePage from "./components/WelcomePage.js";
-import CharacterList from './components/CharacterList';
+import styled from 'styled-components';
 
+const MainSection = styled.main`
+  background-color: lightblue;
+  border: 2px solid black;
+`;
 
 export default function App() {
   return (
     <>
-      <main>
+      <MainSection>
         <Header />
-      </main>
-      <div>
-        <Route exact path='/' component={WelcomePage} />
-        <Route exact path='/characters' component={CharacterList} />
-      </div>
+      </MainSection>
     </>
   );
 }
