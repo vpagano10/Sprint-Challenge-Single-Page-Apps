@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import styled from 'styled-components';
+// import {BrowserRouter as Router, Route, Link, Switch} from 'react-router-dom';
+// import CharacterListTwo from './CharacterList2';
 
 const CharacterCard = styled.div`
   border: 2px solid black;
@@ -85,6 +87,12 @@ export default function CharacterList() {
         autoComplete='off'
         />
       </Form>
+      {/* <Router>
+        <Link to='/characters/2'>Next</Link>
+        <Switch>
+          <Route exact path='/characters/2' component={CharacterListTwo} />
+        </Switch>
+      </Router> */}
       <CardArea>
         {filteredCharacters.map(data => (
           <CharacterCard key={data.id}>
