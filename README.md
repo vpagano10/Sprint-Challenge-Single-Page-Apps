@@ -27,7 +27,7 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 - [ ]  Explain benefit(s) using `client-side routing`?
 
-> Answer:
+> Answer: By using client-side routing you prevent an entire page re-load or re-fresh everytime a user interacts with the page. You still have the ability to create the illusion of the website containing multiple pages by allowing the Links to change the URL, which in turn, will change which content is displayed on the page. You might want to use client-side routing on websites that use multiple links or forms throughout the page but you don't want to re-render the whole thing each time links are clicked. One example of this might be if you are displaying a lot of data. Rather than having to re-load the whole page each time the user might click a button to see the next set of data, you can just change which data is displayed by changing the URL.
 
 ## Project Set Up
 
